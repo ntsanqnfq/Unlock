@@ -12,3 +12,5 @@ class Fruit {
         return $this->name;
     }
 }
+
+?>
