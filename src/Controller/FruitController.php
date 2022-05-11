@@ -1,16 +1,18 @@
 <?php
-class Fruit {
-    // Properties
-    public $name;
-    public $color;
+class Fruit
+{
 
-    // Methods
-    function set_name($name) {
+    public $name;
+    protected $color;
+    private $weight;
+
+    function setName($name)
+    {
         $this->name = $name;
     }
-    function get_name() {
+
+    function getName()
+    {
         return $this->name;
     }
 }
-
-?>
