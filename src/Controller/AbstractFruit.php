@@ -1,10 +1,12 @@
 <?php
-class Fruit
+namespace app\Controller;
+
+class AbstractFruit
 {
 
-    public $name;
+    private $name;
     protected $color;
-    private $weight;
+    private $taste;
 
     function setName($name)
     {
@@ -15,4 +17,6 @@ class Fruit
     {
         return $this->name;
     }
+
 }
+
