@@ -1,13 +1,15 @@
 <?php
 require "vendor/autoload.php";
 
-use app\Controller\Chilli;
-use app\Controller\Mango;
+use app\Core\Application;
 
-$mango = new Mango();
-$mango->taste();
+$app = new Application();
 
-echo "\n";
+$app->router->get('/', function(){
+    return 'Home page';
+});
+$app->router->get('/fruits', function(){
+    return 'here is fruits list';
+});
 
-$chilli = new Chilli();
-$chilli->taste();
+$app->run();
