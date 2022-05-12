@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace tests\Controller;
+namespace Sang\tests\Controller;
 
-use app\Controller\Mango;
+use Sang\Unlock\Controller\Mango;
 use PHPUnit\Framework\TestCase;
 
 

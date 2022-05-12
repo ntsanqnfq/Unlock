@@ -2,12 +2,12 @@
     "name": "sang/unlock",
     "autoload": {
         "psr-4": {
-            "app\\": "src/"
+            "Sang\\Unlock\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "tests\\": "tests/"
+            "Sang\\tests\\": "tests/"
         }
     },
     "require": {

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\Controller;
+namespace Sang\Unlock\Controller;
 
-use app\Controller\TasteInterface;
-use app\Controller\FruitAbstact;
+use Sang\Unlock\Controller\TasteInterface;
+use Sang\Unlock\Controller\FruitAbstact;
 
 class Mango extends FruitAbstact implements TasteInterface
 {

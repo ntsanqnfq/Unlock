@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Controller;
+namespace Sang\Unlock\Controller;
 
 class FruitAbstact
 {
