@@ -5,9 +5,9 @@ namespace Sang\Unlock\Controller;
 class FruitAbstact
 {
 
-    private $name;
-    private $color;
-    private $taste;
+    protected $name;
+    protected $color;
+    protected $taste;
 
     public function setName(string $name)
     {
