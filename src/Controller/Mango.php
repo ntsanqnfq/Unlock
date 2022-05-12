@@ -1,14 +1,15 @@
 <?php
 
 namespace app\Controller;
-use app\Controller\InterfaceTaste;
-use app\Controller\AbstractFruit;
 
-class Mango extends AbstractFruit implements InterfaceTaste
+use app\Controller\TasteInterface;
+use app\Controller\FruitAbstact;
+
+class Mango extends FruitAbstact implements TasteInterface
 {
     public function taste()
     {
-        echo "Sweet";
+        return "Sweet";
     }
 
     /**
@@ -16,7 +17,7 @@ class Mango extends AbstractFruit implements InterfaceTaste
      * @param $weight
      * @return float|int
      */
-    public function weightScale($number, $weight)
+    public function weightScale(int $number, int $weight)
     {
         $total = $number * $weight;
         return $total;

@@ -1,9 +1,12 @@
 <?php
+
 namespace app\Controller;
 
-class Chilli extends AbstractFruit implements InterfaceTaste {
-    public function taste() {
-        echo "Spicy";
+class Chilli extends FruitAbstact implements TasteInterface
+{
+    public function taste()
+    {
+        return "Spicy";
     }
 }
 

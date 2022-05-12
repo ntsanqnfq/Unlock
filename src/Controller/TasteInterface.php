@@ -1,5 +1,7 @@
 <?php
+
 namespace app\Controller;
-interface InterfaceTaste{
+interface TasteInterface
+{
     public function taste();
 }

@@ -5,9 +5,11 @@ use app\Controller\Chilli;
 use app\Controller\Mango;
 
 $mango = new Mango();
-$mango->taste();
 
+$taste = $mango->taste();
+echo $taste;
 echo "\n";
 
 $chilli = new Chilli();
-$chilli->taste();
+$taste = $chilli->taste();
+echo $taste;

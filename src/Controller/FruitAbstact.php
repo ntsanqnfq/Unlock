@@ -1,19 +1,20 @@
 <?php
+
 namespace app\Controller;
 
-class AbstractFruit
+class FruitAbstact
 {
 
     private $name;
-    protected $color;
+    private $color;
     private $taste;
 
-    function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
 
-    function getName()
+    public function getName(string $name)
     {
         return $this->name;
     }
