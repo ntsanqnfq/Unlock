@@ -2,8 +2,15 @@
     "name": "sang/unlock",
     "autoload": {
         "psr-4": {
-            "app\\": "src/"
+            "Sang\\Unlock\\": "src/"
         }
     },
-    "require": {}
+    "autoload-dev": {
+        "psr-4": {
+            "Sang\\tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
 }
