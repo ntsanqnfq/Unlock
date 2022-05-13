@@ -1,8 +1,8 @@
 <?php
 require "vendor/autoload.php";
 
-use app\Controller\Chilli;
-use app\Controller\Mango;
+use Sang\Unlock\Controller\Chilli;
+use Sang\Unlock\Controller\Mango;
 
 $mango = new Mango();
 
