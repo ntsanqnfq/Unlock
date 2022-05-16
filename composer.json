@@ -5,11 +5,6 @@
             "Sang\\Unlock\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Sang\\tests\\": "tests/"
-        }
-    },
     "require": {
         "phpunit/phpunit": "^9.5"
     }

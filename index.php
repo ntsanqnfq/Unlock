@@ -1,15 +1,8 @@
 <?php
-require "vendor/autoload.php";
+require 'vendor/autoload.php';
+use Sang\Unlock\Controller\DatabaseConnector;
 
-use Sang\Unlock\Controller\Chilli;
-use Sang\Unlock\Controller\Mango;
+$dbConnect1 = DatabaseConnector::getInstance();
+$dbConnect2 = DatabaseConnector::getInstance();
+$dbConnect1->getDatabase();
 
-$mango = new Mango();
-
-$taste = $mango->taste();
-echo $taste;
-echo "\n";
-
-$chilli = new Chilli();
-$taste = $chilli->taste();
-echo $taste;
