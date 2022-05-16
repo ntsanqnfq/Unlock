@@ -1,10 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-use Sang\Unlock\Controller\DatabaseConnector;
 
-$dbConnect1 = DatabaseConnector::getInstance();
-$dbConnect2 = DatabaseConnector::getInstance();
+$zalo = new \Sang\Unlock\Controller\WechatMessage();
+$zalo->send('I hate you');
 
-if($dbConnect2===$dbConnect1){
-    echo 'the same';
-}
