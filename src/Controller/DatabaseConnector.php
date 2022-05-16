@@ -1,32 +1,27 @@
 <?php
 namespace Sang\Unlock\Controller;
 
-class DatabaseConnector {
-    private static DatabaseConnector $instance;
-    protected string $host = '';
-    protected string $username = '';
-    protected string $password = '';
+class DatabaseConnector
+{
+    private static $instance = null;
 
-    private function __construct(
-        string $host = 'NFQ_Database', string $username = 'nfq', string $password =  'nfq'
-    )
-    {
-        $this->host = $host;
-        $this->username = $username;
-        $this->password = $password;
+    protected $connection;
+
+    private function __construct() {
+        $host = 'localhost';
+        $username = 'root';
+        $password = '';
+        $database = 'my_database';
+        $random = rand();
+//        $this->connection = new \mysqli($host, $username, $password, $database);
     }
 
-    public static function getInstance() : DatabaseConnector {
-        if (!isset(self::$instance)) {
+    public static function getInstance(): DatabaseConnector
+    {
+        if (self::$instance == null) {
             self::$instance = new DatabaseConnector();
+            return self::$instance;
         }
         return self::$instance;
     }
-
-    public function getDatabase() : void {
-      echo  "host: ".$this->host."\n";
-      echo  "username: ".$this->username."\n";
-      echo  "password: ".$this->password."\n";
-   }
-
 }

@@ -4,5 +4,7 @@ use Sang\Unlock\Controller\DatabaseConnector;
 
 $dbConnect1 = DatabaseConnector::getInstance();
 $dbConnect2 = DatabaseConnector::getInstance();
-$dbConnect1->getDatabase();
 
+if($dbConnect2===$dbConnect1){
+    echo 'the same';
+}
