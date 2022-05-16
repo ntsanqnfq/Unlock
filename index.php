@@ -1,6 +1,5 @@
 <?php
 require 'vendor/autoload.php';
 
-$zalo = new \Sang\Unlock\Controller\WechatMessage();
-$zalo->send('I hate you');
-
+$wechat = new \Sang\Unlock\Controller\WechatMessage();
+echo $wechat->send('I hate you');
