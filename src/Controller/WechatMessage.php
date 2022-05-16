@@ -1,14 +1,17 @@
 <?php
+
 namespace Sang\Unlock\Controller;
 
-class WechatMessage implements MessageInterface{
+class WechatMessage implements MessageInterface
+{
 
     protected string $flatform = '';
 
     /**
      * @param string $flatform
      */
-    public function __construct(string $flatform = 'Wechat'){
+    public function __construct(string $flatform = 'Wechat')
+    {
         $this->flatform = $flatform;
     }
 
@@ -18,6 +21,6 @@ class WechatMessage implements MessageInterface{
      */
     public function send($text)
     {
-        return "This message has content '".$text."' sent from ".$this->flatform;
+        return "This message has content '" . $text . "' sent from " . $this->flatform;
     }
 }
