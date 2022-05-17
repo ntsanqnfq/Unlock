@@ -1,0 +1,11 @@
+{
+    "name": "sang/unlock",
+    "autoload": {
+        "psr-4": {
+            "Sang\\Unlock\\": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
