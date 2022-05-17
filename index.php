@@ -1,5 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-$wechat = new \Sang\Unlock\Controller\WechatMessage();
+use Sang\Unlock\Controller\WechatMessage;
+
+$wechat = new WechatMessage();
 echo $wechat->send('I hate you');
