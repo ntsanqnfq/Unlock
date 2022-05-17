@@ -2,7 +2,7 @@
 
 namespace Sang\Unlock\Controller;
 
-class SlowSpeed extends AbstractShipmentDecorator
+class FastSpeed extends AbstractShipmentDecorator
 {
     protected $plus;
 
@@ -13,11 +13,11 @@ class SlowSpeed extends AbstractShipmentDecorator
 
     public function getPrice(): int
     {
-        return 4000 + $this->plus->getPrice();
+        return 5000 + $this->plus->getPrice();
     }
 
     public function getService(): string
     {
-        return " Slow speed " . $this->plus->getService();
+        return " Fast speed " . $this->plus->getService();
     }
 }
