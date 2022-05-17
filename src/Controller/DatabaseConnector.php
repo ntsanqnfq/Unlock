@@ -12,7 +12,8 @@ class DatabaseConnector
         $username = 'root';
         $password = '';
         $database = 'my_database';
-        $random = rand();
+        $random = rand(1,9);
+        echo $random;
 //        $this->connection = new \mysqli($host, $username, $password, $database);
     }
 
